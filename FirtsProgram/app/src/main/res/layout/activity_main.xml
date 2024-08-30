@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtX"
+        android:layout_width="372dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Number1"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtY"
+        android:layout_width="372dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Number2"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtX" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="366dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtY"
+        app:layout_constraintStart_toStartOf="@+id/txtY"
+        app:layout_constraintTop_toBottomOf="@+id/txtY" />
+
+    <Button
+        android:id="@+id/nhan"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="2dp"
+        android:text="*"
+        android:onClick="nhan_click"
+        app:layout_constraintEnd_toStartOf="@+id/chia"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/tru"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="46dp"
+        android:text="-"
+        android:onClick="tru_click"
+        app:layout_constraintEnd_toStartOf="@+id/nhan"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cong"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="46dp"
+        android:text="+"
+        android:onClick="cong_click"
+        app:layout_constraintEnd_toStartOf="@+id/tru"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/chia"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="48dp"
+        android:text=":"
+        android:onClick="chia_click"
+        app:layout_constraintEnd_toStartOf="@+id/du"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/du"
+        android:layout_width="64dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="52dp"
+        android:text="R"
+        android:onClick="du_click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

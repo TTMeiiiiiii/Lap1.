@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chucnangnt">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#6CC1E7"
+        android:text="NHẬP SỐ ĐIỆN THOẠI"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sdt1"
+            android:layout_width="153dp"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="sđt"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/nt"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="SMS"
+            android:onClick="nt_click"
+
+            />
+
+        <Button
+            android:id="@+id/thoat"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="BACK"
+            android:onClick="thoat_click"
+
+            />
+    </LinearLayout>
+</LinearLayout>
